@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+    <style>
+        ul {
+            list-style-type: none;
+            text-align: center;
+            background-color: blue;
+
+        }
+
+        li {
+            display: inline-block;
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Unvisited link */
+        a:link {
+            color: white;
+        }
+
+        /* visited link */
+        a:visited {
+            color: black;
+        }
+
+        /* hover state */
+        a:hover {
+            font-weight: bold;
+        }
+
+        /* active - selected link */
+        a:active {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Pseudo Class: Used to define the special state of an elements -->
+    <!-- Syntax
+    selector: psuedo-class{
+        property:value;
+    }
+    -->
+
+    <!-- Anchor pseudo class: unvisited link, visited, hover, active -->
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Service</a></li>
+    </ul>
+</body>
+
+</html>

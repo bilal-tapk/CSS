@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        /*static - Not affected by left, rigt, top and bottom properties*/
+        /* All HTML elements have 'static' position by default */
+        #static {
+            border: 1px solid black;
+            position: static;
+            /*default property*/
+        }
+
+        #relative {
+            border: 1px solid black;
+            position: relative;
+            /* Element adjust away from its normal position, other content will not fit */
+            top: 10px;
+            left: 2px;
+            right: 5px;
+        }
+
+        /* Position relative to viewport - element always stay on the same place even if the webpage scrolls */
+        #fixed {
+            border: 1px solid black;
+            position: fixed;
+            bottom: 500px;
+            width: 600px;
+        }
+
+        /* Position relative to nearest position ancestor such as {position: relative or fixed or sticky} */
+        /* However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling. */
+        .relative {
+            border: 1px solid black;
+            position: relative;
+            top: 320px;
+            height: 400px;
+            width: 400px;
+        }
+
+        .absolute {
+            border: 1px solid black;
+            position: relative;
+            top: 30px;
+            height: 200px;
+            width: 200px;
+            left: 10px;
+        }
+
+        .container {
+            position: relative;
+            top: 350px;
+        }
+
+        #relative-text{
+            position: absolute;
+            bottom: 220px;
+            left: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Position: static, relative, fixed -->
+    <div id="static">
+        This div has a position static
+    </div>
+
+
+    <div id="relative">
+        This div has a position relative
+    </div>
+
+    <div id="fixed">
+        This div has a position fixed
+    </div>
+
+    <div class="relative">This div element has position: relative;
+        <div class="absolute">This div element has position: absolute;</div>
+    </div>
+
+    <!-- Place text over an image -->
+    <div class="container">
+        <img src="./media/elantra.jpg" alt="" height="300px" style="opacity: 0.5;">
+        <p id="relative-text">Hello</p>
+    </div>
+</body>
+
+</html>

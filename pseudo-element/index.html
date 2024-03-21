@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+
+    <style>
+        /* 1. "first-line" pseudo element: Adding style to the first line of a text */
+        /* This pseudo element only apply to block level element */
+        p::first-line {
+            background-color: black;
+            color: white;
+        }
+
+        /* 2. "first-letter" - Add a specific style to the first letter of a text */
+        h3::first-letter {
+            font-size: 30px;
+        }
+
+        /* 3. ::before pseudo-element can be used to insert some content before the content of an element. */
+        h4::before {
+            content: url("media/smile.gif");
+        }
+
+        /*4. ::after pseudo-element can be used to insert some content after the content of an element */
+        h5::after {
+            content: url("media/smile.gif");
+        }
+
+        /* 5. ::marker used to select the markers of list items */
+        ::marker {
+            color: darkblue;
+            font-weight: bold;
+        }
+
+        /* 6. ::selection pseudo-element matches the portion of an element that is selected by a user. */
+        #selected-text::selection {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Pseudo element: Used to style specific parts of an element -->
+    <p>
+        Aliqua est in incididunt deserunt dolore sit Lorem minim minim enim commodo ea commodo. Est aliqua adipisicing
+        proident occaecat ut dolore anim duis laborum enim nisi nostrud culpa. Adipisicing culpa irure ullamco id in
+        dolor cillum magna ut nostrud ut fugiat.
+    </p>
+
+    <h3>Bilal</h3>
+
+    <h4>Hello World</h4>
+
+    <h5>This is a Sample heading. HTML element support six levels of headings.</h5>
+
+    <ol>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li>Every Day</li>
+        <li>Soft Drink</li>
+        <li>Rice</li>
+        <li>Bread</li>
+        <li>Nuggets</li>
+    </ol>
+
+
+    <p id="selected-text">
+        Quis quis deserunt sunt ullamco enim proident amet. Quis id sunt aliquip elit nostrud exercitation id non
+        duis. Pariatur officia culpa in deserunt id ea nulla tempor sint ea et ex.
+
+        Veniam duis quis do aliqua officia esse dolor elit sunt id pariatur. Eu labore eiusmod nisi commodo magna
+        incididunt et laboris qui eu exercitation Lorem et. Quis enim esse exercitation dolore commodo. Aute laborum
+        do eu in reprehenderit ullamco duis nisi fugiat. Aute enim dolor eu aute aliquip amet enim. Laborum
+        adipisicing cillum quis ea nulla do proident excepteur aute nulla non. Ullamco ut esse ea proident cupidatat
+        veniam.
+
+        Do excepteur nisi velit consequat irure commodo tempor ad culpa quis. Dolore exercitation et dolor et id
+        labore aliqua sunt officia sit nisi. Veniam est incididunt qui in velit. Commodo occaecat consectetur ea
+        aliquip mollit exercitation voluptate cillum mollit do proident irure anim eu. Nostrud eu ea magna tempor eu
+        nostrud qui adipisicing et consectetur dolor velit aliquip ipsum. Excepteur cupidatat id ex esse ex
+        consequat ipsum anim. Commodo id minim veniam do ipsum consequat reprehenderit non.
+    </p>
+
+</body>
+
+</html>

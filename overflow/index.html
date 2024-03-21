@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        #visible {
+            height: 130px;
+            width: 400px;
+            border: 1px solid black;
+            overflow: visible;
+            margin-bottom: 20px;
+        }
+
+        #hidden {
+            height: 130px;
+            width: 400px;
+            border: 1px solid black;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        #scrollbar {
+            height: 130px;
+            width: 400px;
+            border: 1px solid black;
+            overflow: scroll;
+            margin-bottom: 20px;
+        }
+
+        #auto {
+            height: 130px;
+            width: 400px;
+            border: 1px solid black;
+            overflow: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Overlflow property control what happen to content that is too big to fit into an area -->
+    <!-- Predefined values: visisble, hidden, scroll, auto -->
+    <!-- Overlow property only works for block elements with a specified height -->
+
+    <!-- Overflow:visible ==> default property, content render outside of the elements box -->
+    <div id="visible">
+        <p>
+            Aliquip ad irure fugiat nulla nulla quis voluptate elit ut ex in incididunt minim ex. Aute veniam mollit
+            elit ut incididunt eu mollit cillum do qui culpa minim amet. Eiusmod dolore eu qui consectetur ullamco
+            officia enim voluptate. Excepteur amet anim deserunt sint proident nostrud nulla esse. Quis ut id aliquip
+            adipisicing et occaecat sunt dolor reprehenderit aliquip fugiat.
+        </p>
+    </div>
+
+    <!-- Overflow: hidden, additional content will be invisible -->
+    <div id="hidden">
+        <p>
+            Aliquip ad irure fugiat nulla nulla quis voluptate elit ut ex in incididunt minim ex. Aute veniam mollit
+            elit ut incididunt eu mollit cillum do qui culpa minim amet. Eiusmod dolore eu qui consectetur ullamco
+            officia enim voluptate. Excepteur amet anim deserunt sint proident nostrud nulla esse. Quis ut id aliquip
+            adipisicing et occaecat sunt dolor reprehenderit aliquip fugiat.
+        </p>
+    </div>
+
+    <!-- Overflow: scroll, adding scrollbar to view rest of the content -->
+    <div id="scrollbar">
+        <p>
+            Aliquip ad irure fugiat nulla nulla quis voluptate elit ut ex in incididunt minim ex. Aute veniam mollit
+            elit ut incididunt eu mollit cillum do qui culpa minim amet. Eiusmod dolore eu qui consectetur ullamco
+            officia enim voluptate. Excepteur amet anim deserunt sint proident nostrud nulla esse. Quis ut id aliquip
+            adipisicing et occaecat sunt dolor reprehenderit aliquip fugiat.
+        </p>
+    </div>
+
+
+    <!-- Overflow: auto, adding scrollbar only when necessary -->
+    <div id="auto">
+        <p>
+            Aliquip ad irure fugiat nulla nulla quis voluptate elit ut ex in incididunt minim ex. Aute veniam mollit
+            elit ut incididunt eu mollit cillum do qui culpa minim amet. Eiusmod dolore eu qui consectetur ullamco
+            officia enim voluptate. Excepteur amet anim deserunt sint proident nostrud nulla esse. Quis ut id aliquip
+            adipisicing et occaecat sunt dolor reprehenderit aliquip fugiat.
+        </p>
+    </div>
+</body>
+
+</html>

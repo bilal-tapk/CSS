@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline Block</title>
+
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+        li {
+            display: inline-block;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Compare inline-block and inline -->
+    <!-- 1. "inline-block" allow to set width and height of an element -->
+    <!-- 2. "inline-block" - top and bottom margin/padding are respected, "inline" - they are not -->
+
+    <!-- Compare inline-block and block -->
+    <!-- 1. "inline-block" doesnot add line break after an elements, so element can sit next to each other -->
+
+    <!-- Creating navigation link -->
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+        </ul>
+    </nav>
+</body>
+
+</html>

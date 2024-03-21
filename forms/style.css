@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  margin: 10px 10px;
+}
+input[type="text"],
+input[type="email"] {
+  margin: 10px;
+  display: block;
+  width: 250px;
+  padding: 10px 8px; /* Adding padding to the input field */
+  border-radius: 5px; /*Adding rounded corner*/
+  border: 1px solid lightgrey;
+  outline: none; /*Removing the border when the user place the cursor on the input field*/
+}
+
+/* Set the bottom border for input password */
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 170px;
+  padding: 5px 3px; /* Adding padding to the input field */
+  outline: none;
+}

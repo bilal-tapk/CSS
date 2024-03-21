@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Links</title>
+    <style>
+        /*1. Style Links */
+        #style-link {
+            color: white;
+            background-color: green;
+        }
+
+        /* State of Anchor tag: link, visited, hover and active */
+        /* Order state of anchor tag: link --> visited --> hover --> active */
+        /* link state: normal or unvisited link */
+        #link-state:link{
+            color: red;
+        }
+
+        /* When the user first time visit the link */
+        #link-state:visited{
+            color: brown;
+        }
+
+        /* When the user hover over the link */
+        #link-state:hover{
+            color: orange;
+        }
+
+        /* When the user click on the link */
+        #link-state:active{
+            color: purple
+        }
+
+        /* 2. text-decoration */
+        a{
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Style Links -->
+    <a href="#" id="style-link">Home Page</a>
+
+    <!-- Link state: normal -->
+    <a href="#" id="link-state">About Page</a>
+</body>
+
+</html>
